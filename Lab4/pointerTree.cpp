@@ -18,7 +18,6 @@ void    BST_traverse_preOrder(node* tree);
 void    BST_traverse_postOrder(node* tree);
 void    printTabs(int tabs);
 void    printTree(node* root, int depth);
-// void    BST_delete(node* tree); //destructore
 
 
 int main(){
@@ -174,10 +173,4 @@ void BST_traverse_postOrder(node* root){
     if(root->left != nullptr)  BST_traverse_postOrder(root->left);
     if(root->right != nullptr) BST_traverse_postOrder(root->right);
     cout << "[" <<root->val << "] -> " ;
-}
-//-----------------------------------------------------------------------------------
-
-
-void BST_delete(node* tree) {//destructore
-
 }

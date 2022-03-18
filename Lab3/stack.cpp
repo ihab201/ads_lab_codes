@@ -17,8 +17,6 @@ struct person {
 };
 
 
-
-
 class Stack{
 private:
     person *head;
@@ -92,12 +90,9 @@ public:
 int main(){
     Stack s;
     
-    s.push("nassim", "maallem", 20);
-    s.push("zakaria", "madaoui", 21);
-    s.push("vdfsfd", "sdfdsf", 51);
-
-
-    // s.traverse(DIRECTION_BACKWARD);
+    s.push("name1", "famname1", 20);
+    s.push("name2", "famname2", 21);
+    s.push("name3", "famname3", 51);
 
     char user_option = '\0';
     string temp_fname;

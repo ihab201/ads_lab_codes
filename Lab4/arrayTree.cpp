@@ -24,7 +24,6 @@ void    BST_traverse_preOrder(tree &t);
 void    BST_traverse_postOrder(tree &t);
 void    printTabs(int tabs);
 void    printTree(tree &t,int root, int depth);
-// void    BST_delete(tree &t); //destructore
 
 int main(){
     tree t; 
@@ -35,8 +34,8 @@ int main(){
     BST_insert(t, 1 );
     BST_insert(t, 6 );
     BST_insert(t, 7 );
-    BST_insert(t, 9);
-    // BST_insert(t, 14);
+    BST_insert(t, 10);
+    BST_insert(t, 14);
     BST_insert(t, 4 );
 
 

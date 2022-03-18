@@ -16,9 +16,6 @@ struct person {
     person* prev;
 };
 
-
-
-
 class Queue{
 private:
     person *head;
@@ -48,18 +45,6 @@ public:
             head = tail = temp;
         }
     }
-
-    // person pop(){
-    //     if(head == nullptr){
-    //         cout << "not possible ! Queue is empty" << endl;
-    //     }else if(head->prev == nullptr){
-    //         person* temp = head;
-    //         head = nullptr;
-    //         return (*temp);
-    //     }else{
-
-    //     }
-    // }
 
     void pop(){
         if(head == nullptr){
@@ -104,13 +89,10 @@ public:
 
 int main(){
     Queue q;
-    
-    q.push("nassim", "maallem", 20);
-    q.push("zakaria", "madaoui", 21);
-    q.push("vdfsfd", "sdfdsf", 51);
-
-
-    // q.traverse(DIRECTION_BACKWARD);
+       
+    q.push("name1", "famname1", 20);
+    q.push("name2", "famname2", 21);
+    q.push("name3", "famname3", 51);
 
     char user_option = '\0';
     string temp_fname;
